@@ -1,0 +1,19 @@
+h5 {
+  color: red;
+}
+div {
+  background-color: bisque;
+}
+.header {
+  background-color: aquamarine;
+  color: green;
+}
+.about {
+  background-color: chartreuse;
+}
+.white-color {
+  color: white;
+}
+#breeds {
+  font-size: 30px;
+}
