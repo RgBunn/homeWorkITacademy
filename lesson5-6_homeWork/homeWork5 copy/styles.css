@@ -1,0 +1,26 @@
+.header {
+  background-color: #244280;
+  color: white;
+}
+table {
+  width: 100%;
+  border: 2px solid #244280;
+}
+td {
+  border: 1px solid darkgray;
+}
+.blue {
+  color: blue;
+}
+.gray {
+  color: gray;
+}
+.pink {
+  color: rgb(222, 98, 187);
+}
+.red {
+  color: red;
+}
+.full-width {
+  width: 97%;
+}

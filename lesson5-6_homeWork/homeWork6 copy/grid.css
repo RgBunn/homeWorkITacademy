@@ -1,0 +1,21 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 10px;
+}
+.header,
+.footer {
+  background-color: yellow;
+
+  grid-template-rows: 1;
+}
+.main {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+.article,
+.nav,
+.ads {
+  background-color: yellow;
+}
