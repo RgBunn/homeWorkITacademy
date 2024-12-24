@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* height: 400px;
+  width: 600px; */
+}
+.header,
+.footer {
+  background-color: yellow;
+  height: 50px;
+}
+.main {
+  display: flex;
+  height: 300px;
+  gap: 10px;
+}
+.article {
+  width: 60%;
+  background-color: yellow;
+}
+.nav,
+.ads {
+  width: 20%;
+  background-color: yellow;
+}
