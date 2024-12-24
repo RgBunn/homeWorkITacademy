@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: bisque;
+}
+
+.h-50px {
+  height: 50px;
+}
+
+.percents {
+  background-color: aqua;
+  width: 50%;
+  height: 100vh;
+}
+.p80 {
+  background-color: coral;
+  width: 80%;
+}
+.p50 {
+  background-color: lawngreen;
+  width: 50%;
+}
+.pi-sheng {
+  font-family: "pi-sheng";
+}
+@font-face {
+  font-family: "pi-sheng";
+  src: url("./fonts/Pi-Sheng/pi-sheng.regular.otf");
+}
