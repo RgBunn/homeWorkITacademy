@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <table>
+      <tr class="header">
+        <td colspan="9">Calculator</td>
+        <td>&#8213;</td>
+        <td class="square">&#9633;</td>
+        <td>&#10005;</td>
+        <!-- <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td> -->
+      </tr>
+      <tr>
+        <td><u>E</u>dit</td>
+        <td><u>V</u>iew</td>
+        <td><u>I</u>nfo</td>
+        <!-- <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td> -->
+      </tr>
+      <tr>
+        <td colspan="6"></td>
+        <td colspan="6">
+          <input type="number" placeholder="0." class="full-width" />
+        </td>
+        <!-- <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td> -->
+      </tr>
+      <tr>
+        <td colspan="7">
+          <input type="radio" name="type1" id="hex" />
+          <label for="hex">Hex</label>
+          <input type="radio" name="type1" id="dec" checked />
+          <label for="dec">Dec</label>
+          <input type="radio" name="type1" id="oct" />
+          <label for="oct">Oct</label>
+          <input type="radio" name="type1" id="bin" />
+          <label for="bin">Bin</label>
+        </td>
+        <td colspan="5">
+          <input type="radio" name="type2" id="degrees" checked />
+          <label for="degrees">Degrees</label>
+          <input type="radio" name="type2" id="radians" />
+          <label for="radians">Radians</label>
+          <input type="radio" name="type2" id="gradients" />
+          <label for="gradients">Gradients</label>
+        </td>
+        <!-- <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td> -->
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" name="type3" id="inv" />
+          <label for="inv">Inv</label>
+          <input type="checkbox" name="type3" id="hyp" />
+          <label for="hyp">Hyp</label>
+        </td>
+        <td></td>
+        <td></td>
+        <td colspan="2" class="red">Backspace</td>
+        <td colspan="2" class="red">CE</td>
+        <td colspan="2" class="red">C</td>
+        <!-- <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td> -->
+      </tr>
+      <tr>
+        <td class="blue">Sta</td>
+        <td class="pink">FE</td>
+        <td class="pink">(</td>
+        <td class="pink">)</td>
+        <td class="red">MC</td>
+
+        <td class="blue">7</td>
+        <td class="blue">8</td>
+        <td class="blue">9</td>
+        <td class="red">/</td>
+        <td class="red">Mod</td>
+        <td class="red">And</td>
+        <!-- <td>12</td> -->
+      </tr>
+
+      <tr>
+        <td class="gray">Ave</td>
+        <td class="pink">dms</td>
+        <td class="pink">Exp</td>
+        <td class="pink">In</td>
+        <td class="red">MR</td>
+        <td class="blue">4</td>
+        <td class="blue">5</td>
+        <td class="blue">6</td>
+        <td class="red">*</td>
+        <td class="red">Or</td>
+        <td class="red">Xor</td>
+        <!-- <td>12</td> -->
+      </tr>
+      <tr>
+        <td class="gray">Sum</td>
+        <td class="pink">sin</td>
+        <td class="pink">x^y</td>
+        <td class="pink">log</td>
+        <td class="red">MS</td>
+        <td class="blue">1</td>
+        <td class="blue">2</td>
+        <td class="blue">3</td>
+        <td class="red">.</td>
+        <td class="red">Lsh</td>
+        <td class="red">Not</td>
+        <!-- <td>12</td> -->
+      </tr>
+      <tr>
+        <td class="gray">s</td>
+        <td class="pink">cos</td>
+        <td class="pink">x^3</td>
+        <td class="pink">nl</td>
+        <td class="red">M+</td>
+        <td class="blue">0</td>
+        <td class="blue">+/-</td>
+        <td class="blue">,</td>
+        <td class="red">+</td>
+        <td class="red">=</td>
+        <td class="red">Int</td>
+        <!-- <td>12</td> -->
+      </tr>
+      <tr>
+        <td class="gray">Dat</td>
+        <td class="pink">tan</td>
+        <td class="pink">x^2</td>
+        <td class="pink">1/x</td>
+        <td class="blue">pi</td>
+        <td class="gray">A</td>
+        <td class="gray">B</td>
+        <td class="gray">C</td>
+        <td class="gray">D</td>
+        <td class="gray">E</td>
+        <td class="gray">F</td>
+        <!-- <td>12</td> -->
+      </tr>
+    </table>
+  </body>
+</html>
