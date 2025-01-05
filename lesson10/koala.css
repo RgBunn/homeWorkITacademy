@@ -1,0 +1,19 @@
+.parent {
+  background-color: peachpuff;
+  height: 500px;
+  width: 500px;
+}
+.parent span {
+  color: blue;
+  font-size: 20px;
+}
+.parent-main {
+  background-color: #fd9b45;
+  height: 200px;
+  width: 200px;
+}
+.parent-main #main-1 {
+  font-size: 20px;
+  color: blueviolet;
+  font-weight: bold;
+}

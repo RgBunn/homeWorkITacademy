@@ -1,0 +1,24 @@
+$redColor: red;
+$mainColor: blue;
+@mixin text {
+  font-size: 20px;
+  color: blueviolet;
+  font-weight: bold;
+}
+.parent {
+  background-color: peachpuff;
+  height: 500px;
+  width: 500px;
+  span {
+    color: $mainColor;
+    font-size: 20px;
+  }
+  &-main {
+    background-color: rgb(253, 155, 69);
+    height: 200px;
+    width: 200px;
+    #main-1 {
+      @include text;
+    }
+  }
+}
