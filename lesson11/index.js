@@ -67,17 +67,45 @@
 
 // const boolStr1 = Boolean(str);
 // console.log(boolStr1, typeof boolStr1);
-const num = 88;
-console.log(num, typeof num);
+// const num = 88;
+// console.log(num, typeof num);
 
-const strNum1 = String(num);
-console.log(strNum1, typeof strNum1);
+// const strNum1 = String(num);
+// console.log(strNum1, typeof strNum1);
 
-const strNum2 = num + "";
-console.log(strNum2, typeof strNum2);
+// const strNum2 = num + "";
+// console.log(strNum2, typeof strNum2);
 
-const strNum3 = num.toString();
-console.log(strNum3, typeof strNum3);
+// const strNum3 = num.toString();
+// console.log(strNum3, typeof strNum3);
 // const boolStr1 = Boolean(str);
 // console.log(boolStr1, typeof boolStr1);const boolStr1 = Boolean(str);
 // console.log(boolStr1, typeof boolStr1);
+
+// const str = "    SOME random STrinG";
+// const str2 = "next string";
+// console.log(str);
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+// const strUp = str.toUpperCase();
+// console.log(strUp);
+// console.log(str.concat(str2));
+// console.log("50" + 25);
+
+// console.log(str.repeat(4));
+// console.log(str.toLowerCase().includes("str"));
+// console.log(str.startsWith(" SOME"));
+// console.log(str.endsWith("string"));
+// console.log(str.replaceAll("S", "$"));
+
+// console.log(str.charAt(6));
+// console.log(str.indexOf("S"));
+// console.log(str.lastIndexOf("S"));
+// console.log(str.slice(5, 11));
+// console.log(str.substring(5, 11));
+// console.log(str.substr(5, 6));
+// console.log(str.trim());
+// console.log(str.trimStart());
+// console.log(str.trimEnd());
