@@ -58,11 +58,31 @@ const arr2 = [5, 6, 7, 8, 9];
 // } else {
 // }
 
-const a = 45;
-const b = 78;
-const name = "John";
-if (a % 2 === 0 && b % 2 === 0 && name === "John") {
-  console.log("Both numbers are even, and the name is John");
-} else {
-  console.log("Either the numbers are not even, or the name is not John");
+// const a = 45;
+// const b = 78;
+// const name = "John";
+// if (a % 2 === 0 && b % 2 === 0 && name === "John") {
+//   console.log("Both numbers are even, and the name is John");
+// } else {
+//   console.log("Either the numbers are not even, or the name is not John");
+// }
+const userName = "John";
+
+switch (userName) {
+  case "John":
+    console.log("Welcome, John!");
+    break;
+  case "Jack":
+    console.log("Welcome, Jack!");
+    break;
+  case "Nick":
+    console.log("Welcome, Nick!");
+    break;
+  case "Mike":
+    console.log("Welcome, Mike!");
+    break;
+
+  default:
+    console.log("Unknown user");
+    break;
 }
