@@ -3,25 +3,27 @@
 // setTimeout(() => console.log(2), 1000);
 // console.log(3);
 
-// function fetchData() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       const data = { name: "Alice", age: 25 };
-//       const error = {
-//         message: "Failed to fetch data",
-//       };
-//       resolve(data);
-//     }, 1000);
-//   });
-// }
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const data = { name: "Alice", age: 25 };
+      const error = {
+        message: "Failed to fetch data",
+        code: 500,
+      };
+      // resolve(data);
+      reject(error);
+    }, 1000);
+  });
+}
 
-// fetchData()
-//   .then((data) => {
-//     console.log(data); // { name: 'Alice', age: 25 }
-//   })
-//   .catch((error) => {
-//     console.error(error);
-//   });
+fetchData()
+  .then((data) => {
+    console.log(data); // { name: 'Alice', age: 25 }
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
 // async function fetchData() {
 //   return new Promise((resolve, reject) => {
@@ -125,10 +127,10 @@ getData();
 */
 ///////////////////////////////////////
 
-function fetchData() {
-  fetch("https://jsonplaceholder.typicode.com/users")
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.error("Error, error"));
-}
-fetchData();
+// function fetchData() {
+//   fetch("https://jsonplaceholder.typicode.com/users")
+//     .then((response) => response.json())
+//     .then((data) => console.log(data))
+//     .catch((error) => console.error("Error, error"));
+// }
+// fetchData();
