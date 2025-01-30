@@ -26,12 +26,16 @@ function isPalindrome(str) {
   if (string.length > 1) {
     if (string === string.split("").toReversed().join("")) {
       console.log("Your string is Palindrome");
+    } else {
+      console.log("Your string is NOT Palindrome");
     }
   } else {
-    console.log("Your string is NOT Palindrome");
+    console.log("String must have more than one character");
   }
 }
 isPalindrome("raceCar   ");
+isPalindrome("abcd");
+isPalindrome("");
 
 // 3
 function uniqueValues(arr) {
@@ -62,7 +66,21 @@ function sumRange(start, end) {
 console.log(sumRange(2, 5));
 
 // 5
-// same as N3
+
+function uniqueSymbols(string) {
+  const uniqueLetters = [];
+
+  const lettersArray = string.toLowerCase().split("");
+
+  for (let i = 0; i < lettersArray.length; i++) {
+    const count = lettersArray.filter((el) => el === lettersArray[i]).length;
+    if (count === 1) {
+      uniqueLetters.push(lettersArray[i]);
+    }
+  }
+  return uniqueLetters;
+}
+console.log(uniqueSymbols("Java"));
 
 // 6
 function calcArr(num) {
