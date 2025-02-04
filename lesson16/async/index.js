@@ -3,19 +3,8 @@
 // setTimeout(() => console.log(2), 1000);
 // console.log(3);
 
-function fetchData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const data = { name: "Alice", age: 25 };
-      const error = {
-        message: "Failed to fetch data",
-        code: 500,
-      };
-      // resolve(data);
-      reject(error);
-    }, 1000);
-  });
-}
+
+
 
 fetchData()
   .then((data) => {
@@ -29,7 +18,7 @@ fetchData()
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       const data = { name: "Alice", age: 25 };
-//       resolve(data);
+//       reject(data);
 //     }, 1000);
 //   });
 // }
@@ -65,34 +54,34 @@ fetchData()
 
 // fetchUserData();
 
-// async function postData() {
-//   const data = {
-//     title: "foo",
-//     body: "bar",
-//     userId: 1,
-//   };
+async function postData() {
+  const data = {
+    title: "foo",
+    body: "bar",
+    userId: 1,
+  };
 
-//   try {
-//     const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
-//       method: "POST", // Метод запроса
-//       headers: {
-//         "Content-Type": "application/json", // Указываем тип содержимого
-//       },
-//       body: JSON.stringify(data), // Преобразуем объект в JSON
-//     });
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST", // Метод запроса
+      headers: {
+        "Content-Type": "application/json", // Указываем тип содержимого
+      },
+      body: JSON.stringify(data), // Преобразуем объект в JSON
+    });
 
-//     if (!response.ok) {
-//       throw new Error("Network response was not ok");
-//     }
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
 
-//     const result = await response.json();
-//     console.log("Success:", result);
-//   } catch (error) {
-//     console.error("Error:", error);
-//   }
-// }
+    const result = await response.json();
+    console.log("Success:", result);
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
 
-// postData();
+postData();
 
 //////////////////////////////////////////////////
 /*
