@@ -1,0 +1,59 @@
+#element::after {
+  content: " pseudo element";
+}
+#element::before {
+  content: "something before ";
+  color: red;
+}
+.links:link {
+  color: green;
+}
+.links:visited {
+  color: orange;
+}
+.links:active {
+  color: hotpink;
+}
+.hover-div:hover {
+  background-color: aquamarine;
+}
+.hover-div > span:hover {
+  color: plum;
+  background-color: bisque;
+  /* cursor:wait; */
+  /* cursor: not-allowed; */
+  /* cursor: zoom-in; */
+  /* cursor: zoom-out; */
+  cursor: crosshair;
+}
+.empty:empty {
+  height: 20px;
+  background-color: darkkhaki;
+}
+.child:first-child {
+  background-color: chocolate;
+}
+.child:last-child {
+  background-color: rgb(171, 107, 217);
+}
+.child:nth-child(even) {
+  color: aquamarine;
+}
+.child:nth-child(odd) {
+  color: orangered;
+}
+.child:nth-child(3n + 3) {
+  background-color: cornflowerblue;
+}
+
+@media screen and (max-width: 768px) {
+  a {
+    display: none;
+  }
+  .media {
+    width: 50%;
+    background-color: darkolivegreen;
+    color: blanchedalmond;
+    text-align: center;
+  }
+}

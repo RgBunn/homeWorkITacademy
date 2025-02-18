@@ -1,0 +1,128 @@
+/* Agu */
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&display=swap");
+
+/* Sora */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+/* Crimson text */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+}
+
+.header__primary {
+  font-family: "Agu Display", serif;
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+.header__secondary {
+  font-family: "Sora", serif;
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+
+/* Hero-section */
+.hero {
+  padding: 3rem;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero > * {
+  margin-bottom: 2rem;
+}
+.hero__main {
+  background-image: url(/catsNdogs/images/hero/hero_main.jpg);
+}
+.hero__about {
+  background-image: url(/catsNdogs/images/hero/hero_about.jpg);
+}
+.hero__dog {
+  background-image: url(/catsNdogs/images/hero/hero_dog.jpg);
+}
+.hero__luna {
+  background-image: url(/catsNdogs/images/hero/hero_luna.jpg);
+}
+.hero__whiskers {
+  background-image: url(/catsNdogs/images/hero/hero_mrWhiskers.jpg);
+}
+/* Main page cards */
+.card__custom-img-height {
+  height: 200px;
+  object-fit: cover;
+}
+/* Profile card */
+.profile_card {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+.profile-image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* Skills container */
+.card__skills-img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+/* Illustrations */
+.paw-illustration img {
+  height: 300px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 4rem;
+  background-image: linear-gradient(
+    to right,
+    #c4f5fa,
+    #fcc8f8,
+    #e9b5f7,
+    #f1f797
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.footer__links img {
+  height: 20px;
+}
+.footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+/* button */
+a.btn-custom {
+  background-image: linear-gradient(to bottom right, #c4f5fa, #e9b5f7);
+  color: #9b47c0;
+  border: none;
+  box-shadow: 0px 0px 8px #9b77f1;
+}
+nav a,
+a {
+  color: #9b47c0 !important;
+}
+a.btn-custom:hover,
+nav a:hover,
+a:hover {
+  color: #5d2f6e !important;
+}

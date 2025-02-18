@@ -1,0 +1,34 @@
+$blueColor: blue;
+$grayColor: gray;
+$redColor: red;
+$pinkColor: rgb(222, 98, 187);
+table {
+  width: 100%;
+  border: 2px solid #244280;
+
+  .header {
+    background-color: #244280;
+    color: white;
+  }
+
+  td {
+    border: 1px solid $grayColor;
+  }
+  tr {
+    td .full-width {
+      width: 97%;
+    }
+    .red {
+      color: $redColor;
+    }
+    .blue {
+      color: $blueColor;
+    }
+    .pink {
+      color: $pinkColor;
+    }
+    .gray {
+      color: $grayColor;
+    }
+  }
+}
