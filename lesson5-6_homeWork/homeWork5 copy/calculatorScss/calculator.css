@@ -1,0 +1,20 @@
+table {
+  width: 100%;
+  border: 2px solid #244280; }
+  table .header {
+    background-color: #244280;
+    color: white; }
+  table td {
+    border: 1px solid gray; }
+  table tr td .full-width {
+    width: 97%; }
+  table tr .red {
+    color: red; }
+  table tr .blue {
+    color: blue; }
+  table tr .pink {
+    color: #de62bb; }
+  table tr .gray {
+    color: gray; }
+
+/*# sourceMappingURL=calculator.css.map */
